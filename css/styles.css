@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+
+html {
+    background-image: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, black, black 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); /* do not forget to add commas ( , ) after the first and the seccond linear gradient */
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none
+}
+
+.navbar a:visited {
+    color: white
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px
+}
+
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    height: 50px;
+}
+
+.images img {
+    width: 100%
+}
+
+.view-more {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    font-size: 25px;
+}
+
+.view-more a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.view-more a:hover {
+    text-decoration: underline;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px
+}
+
+#logo {
+    width: 60px;
+}
+
+.cover {
+    background-image: url('https://iyadhkhalfallah.github.io/checkpointsGMC/res/webdev3.png');
+    height: 450px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.cover-title {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 80px;
+    margin-left: 150px;
+    margin-top: 100px;
+    text-shadow: 5px 2px rgb(12, 11, 11);
+}
+
+.track {
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.set {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px
+}
+
+.track1 {
+    background-image: url('../res/tracks/vect00.png');
+}
+.track2 {
+    background-image: url('../res/tracks/vect01.png');
+}
+.track3 {
+    background-image: url('../res/tracks/vect02.png');
+}
+.track4 {
+    background-image: url('../res/tracks/vect03.png');
+}
+.track5 {
+    background-image: url('../res/tracks/vect04.png');
+}
+.track6 {
+    background-image: url('../res/tracks/vect05.png');
+}
+.track7 {
+    background-image: url('../res/tracks/vect06.png');
+}
+.track8 {
+    background-image: url('../res/tracks/vect07.png');
+}
+.track9 {
+    background-image: url('../res/tracks/vect08.png');
+}
+
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#message {
+    border-radius: 8px;
+    margin-top: 20px
+}
+
+.feedback-heading {
+    color: white;
+    font-family: Calibri, 'Trebuchet MS', sans-serif
+}
+
+label {
+    color: white
+}
+
+.input-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.input-item input {
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    padding-left: 10px
+}
+
+.input-item select {
+    border-radius: 5px;
+    width: 260px;
+    height: 35px;
+    background-color: white;
+    padding-left: 10px
+}
+
+#contact-submit {
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    width: 100px;
+}

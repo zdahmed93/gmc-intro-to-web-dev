@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>GoMyCode</title>
-    </head>
 
-    <body>
+<head>
+    <title>GoMyCode</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="navbar">
         <ul>
+            <li><a href="index.html"><img src="https://gomycode.tn/images/section2GMCLogo.png" alt="logo" id="logo"></a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="courses.html">Courses</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <center>
-            <h1>CONTACT</h1>
+    </div>
+    <div class="cover">
+        <h1 class="cover-title">CONTACT</h1>
+    </div>
+  
+        <h1>CONTACT</h1>
+        <div class="input-item">
             <label>Name</label>
-            <input type="text">
-            <br/>
+            <input type="text" placeholder="Your name">
+        </div>
+
+        <div class="input-item">
             <label>Track</label>
             <select>
                 <option>Web</option>
                 <option>Game</option>
                 <option>AI</option>
             </select>
-            <br/>
+        </div>
+
+        <div class="input-item">
             <label>Email address</label>
-            <input type="email">
-            <br/>
+            <input type="email" placeholder="name@example.com">
+        </div>
+
+        <div class="input-item">
             <label>Phone number</label>
-            <input type="number">
-            <br/>
-            <input type="submit" value="Submit">
-        </center>
-    </body>
+            <input type="number" placeholder="Your Phone Number">
+        </div>
+        <div class="input-item">
+            <input type="submit" value="Submit" id="contact-submit">
+        </div>
+</body>
+
 </html>
