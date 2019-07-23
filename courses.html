@@ -37,46 +37,24 @@
     <div class="feedback-container">
         <h2 class="feedback-heading">Feedback</h2>
         <div class="controls">
-            <button>B</button>
-            <button>I</button>
-            <button>Underline</button>
-            <select>
-                <option>20px</option>
-                <option>30px</option>
-                <option>40px</option>
-                <option>50px</option>
+            <button onclick="toggleBold()">B</button>
+            <button onclick="toggleItalic()">I</button>
+            <button onclick="toggleUnderline()">Underline</button>
+            <select onchange="changeFontSize(this)">
+                <option value="20px">20px</option>
+                <option value="30px">30px</option>
+                <option value="40px">40px</option>
+                <option value="50px">50px</option>
             </select>
 
-            <select>
-                <option>Arial</option>
-                <option>Tahoma</option>
-                <option>Calibri</option>
+            <select onchange="changeFontFamily(this)">
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Helvetica">Helvetica</option>
+                <!-- <option value="Cambria">Cambria</option> -->
             </select>
         </div>
         <textarea cols="60" rows="6" id="message"></textarea>
     </div>
+    <script src="js/scripts.js"></script>
 </body>
-
-<!-- <body>
-    <h1>COURSES</h1>
-    <h2>Feedback</h2>
-    <button>B</button>
-    <button>I</button>
-    <button>Underline</button>
-    <select>
-        <option>20px</option>
-        <option>30px</option>
-        <option>40px</option>
-        <option>50px</option>
-    </select>
-
-    <select>
-        <option>Arial</option>
-        <option>Tahoma</option>
-        <option>Calibri</option>
-    </select>
-    <br />
-    <textarea cols="30" rows="10"></textarea>
-</body> -->
-
 </html>
