@@ -3,6 +3,7 @@
 
 <head>
     <title>GoMyCode</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -23,15 +24,27 @@
     </div>
 
     <div class="set">
-        <div class="track track1"></div>
-        <div class="track track2"></div>
-        <div class="track track3"></div>
+        <div class="track track1">
+            <button class="view-more-button vmb1">View more</button>
+        </div>
+        <div class="track track2">
+            <button class="view-more-button vmb2">View more</button>
+        </div>
+        <div class="track track3">
+            <button class="view-more-button vmb3">View more</button>
+        </div>
+    </div>
+    <div class="model-content">
+        <p>This is GoMyCode Track. <br>
+            Each track has its own goal. <br>
+            By adopting this track, you choose your own goal.
+        </p>
     </div>
     <div class="view-more">
         <a href="courses.html">View more ...</a>
     </div>
 
-    <hr/>
+    <hr />
 
     <div class="video-container">
         <h2 style="color: white">More about GoMyCode</h2>
@@ -39,6 +52,10 @@
             <!-- do not forget to replace watch? by embed/ , remove v= and remove &feature=youtu.be -->
         </iframe>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

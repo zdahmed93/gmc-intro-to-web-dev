@@ -48,6 +48,10 @@ html {
     text-decoration: underline;
 }
 
+.view-more-button {
+    display: none;
+}
+
 .video-container {
     display: flex;
     flex-direction: column;
@@ -85,6 +89,17 @@ html {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.track:hover {
+    opacity: 0.5;
+}
+
+button {
+    cursor: pointer;
 }
 
 .set {
@@ -174,4 +189,8 @@ label {
     border: none;
     color: white;
     width: 100px;
+}
+
+.model-content {
+    display: none;
 }
