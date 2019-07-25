@@ -1,31 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
 
-html {
+body {
     background-image: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
                 linear-gradient(127deg, black, black 70.71%),
-                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); /* do not forget to add commas ( , ) after the first and the seccond linear gradient */
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);  /* do not forget to add commas ( , ) after the first and the seccond linear gradient */
 }
+
 
 .navbar a{
-    color: white;
-    text-decoration: none
-}
-
-.navbar a:visited {
-    color: white
-}
-
-.navbar ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 80px
+    color: white !important;
+    /* text-decoration: none */
 }
 
 .navbar {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    height: 50px;
 }
 
 .images img {
@@ -60,7 +49,7 @@ html {
 }
 
 #logo {
-    width: 60px;
+    height: 35px;
 }
 
 .cover {
