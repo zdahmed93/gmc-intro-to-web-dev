@@ -79,3 +79,40 @@ $(".track").mouseleave(function() {
 $(".track, .view-more-button").click(function () {
     $('.model-content').modal() // To use the function modal() we have to install jquery-modal library (js & css)
 })
+
+// Firebase stuff
+var firebaseConfig = {
+    apiKey: "AIzaSyDznmLEeiSUo2dekNLPJq07VEyNNjQson8",
+    authDomain: "gmc-sfax.firebaseapp.com",
+    databaseURL: "https://gmc-sfax.firebaseio.com",
+    projectId: "gmc-sfax",
+    storageBucket: "",
+    messagingSenderId: "978567052707",
+    appId: "1:978567052707:web:4067849b92be8c38"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  var contactsRef = firebase.database().ref('contactsDatabase'); //Setting the name of our database
+  
+  function submitForm(event) {
+    event.preventDefault();
+    var name = document.getElementById('name').value;
+    var track = document.getElementById('track').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+
+    saveContact(name, track, email, phone); //Sending data to our database
+    document.getElementById('contact-form').reset();    
+}
+
+document.getElementById('contact-form').addEventListener('submit', submitForm);
+function saveContact(name, track, email, phone) {
+    var newContactRef = contactsRef.push();
+    newContactRef.set({
+        name: name,
+        track: track,
+        email: email,
+        phone: phone
+    });
+}
